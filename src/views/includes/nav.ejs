@@ -11,6 +11,16 @@
             <!-- <ul class="navbar-nav me-auto mb-2 mb-lg-0"> -->
             <ul class="navbar-nav ms-auto">
                 
+                <% if(!user){ %>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login/index">Entrar</a>
+                </li>
+                
+                <% }else{ %>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/login/logout">Sair</a>
+                    </li>
+                <% } %>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Link</a>
                 </li>
