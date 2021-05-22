@@ -1,13 +1,5 @@
 exports.middlewareGlobal = (req, res, next)=>{
-    // if(req.body.cliente){
-    //     console.log('vi que você postou um cliente');
-    //     next();
-    // }
-    // console.log();
-    // console.log('Passei no midleware global');
-    // console.log();
-
-    res.locals.umaVariavelLocal ='este é o valor da variável local';
+    res.locals.errors = req.flash('errors');
     next();
 };
 exports.outroMiddleware = (req, res, next)=>{
