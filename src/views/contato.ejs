@@ -17,22 +17,22 @@
                     
                     <div class="form-group my-3">
                         <label >Nome</label>
-                        <input type="text" class="form-control" name="nome">
+                        <input value="<%= contato.nome %>" type="text" class="form-control" name="nome">
                     </div>
 
                     <div class="form-group my-3">
                         <label >Sobrenome</label>
-                        <input type="text" class="form-control" name="sobrenome">
+                        <input value="<%= contato.sobrenome %>" type="text" class="form-control" name="sobrenome">
                     </div>
 
                     <div class="form-group my-3">
                         <label >E-mail</label>
-                        <input type="email" class="form-control" name="email">
+                        <input value="<%= contato.email %>" type="email" class="form-control" name="email">
                     </div>
 
                     <div class="form-group my-3">
                         <label >Telefone</label>
-                        <input type="tel" class="form-control" name="telefone">
+                        <input value="<%= contato.telefone %>" type="tel" class="form-control" name="telefone">
                     </div>
                     
                     <button type="submit" class="btn btn-primary my-3">Salvar</button>
